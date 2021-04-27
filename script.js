@@ -6,7 +6,7 @@ var eta = prompt("Inserisci la propria età");
 var costoAlKm = 0.21;
 var costoBiglietto = km * costoAlKm;
 // applicare eventuali sconti 
-if (eta <= 18) {
+if (eta < 18) {
     var sconto = (costoBiglietto * 20) / 100;
     costoBiglietto = costoBiglietto - sconto;
 } else if (eta > 65) {
